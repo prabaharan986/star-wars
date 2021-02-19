@@ -1,0 +1,35 @@
+.loader-container {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}
+
+.loader {
+    position: absolute;
+    top: calc(50%);
+    left: calc(50% - 2em);
+    width: 3em;
+    height: 3em;
+    border: 0.3em solid white;
+    border-left: 0.3em solid red;
+    border-radius: 50%;
+    animation: load8 1.1s infinite linear;
+    transition: opacity 0.1s;
+}
+
+.loader--hide {
+  opacity: 0;
+}
+
+@keyframes load8 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

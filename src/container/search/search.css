@@ -1,0 +1,32 @@
+
+   ul{
+   list-style-type: none;
+   text-align: left;
+   margin: 0;
+   padding: 1em;
+   border: 1px solid gray;
+   }
+    
+   li{
+    padding: 10px 5px ;
+    cursor: pointer;
+   }
+
+   li:nth-child(even){
+    background: rgba(58,63,68,0.5);
+   }
+
+   li:nth-child(odd){
+    background: black;
+   }
+
+   li.large {
+       font-size: 30px;
+   }
+    
+   li:hover{
+    background: lightgray;
+   }
+li > span {
+    display: block;
+}
